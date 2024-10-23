@@ -1,12 +1,12 @@
-import './App.css'
+import Sidebar from "./components/Sidebar";
+import "./css/App.css";
 
 function App() {
-
   return (
     <>
-      <h1>Hello World</h1>
+      <Sidebar />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
