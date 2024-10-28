@@ -8,9 +8,10 @@ const Assignments = () => {
     ];
 
     return (
-        <div>
-            <h1>Assignments</h1>
+        <div className="flex flex-col gap-10">
+            <h2 className="text-[#00173D] text-3xl font-[700]">Assignments</h2>
             <ul>
+
                 {assignments.map((assignment) => (
                     <li key={assignment.id}>
                         {assignment.title} - Due: {assignment.dueDate}
