@@ -1,5 +1,6 @@
 import EnrolledCourse from "./EnrolledCourse";
 import Progress from "./Progress";
+import React from "react";
 
 function Home() {
   return (
