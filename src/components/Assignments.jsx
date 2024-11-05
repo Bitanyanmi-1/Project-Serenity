@@ -8,13 +8,13 @@ const Assignments = () => {
     ];
 
     return (
-        <div className="flex flex-col gap-10">
-            <h2 className="text-[#00173D] text-3xl font-[700]">Assignments</h2>
-            <ul>
-
+        <div className="flex flex-col gap-6 p-6 bg-white shadow-lg rounded-lg">
+            <h2 className="text-[#00173D] text-3xl font-bold mb-4">Assignments</h2>
+            <ul className="space-y-4">
                 {assignments.map((assignment) => (
-                    <li key={assignment.id}>
-                        {assignment.title} - Due: {assignment.dueDate}
+                    <li key={assignment.id} className="flex justify-between items-center p-4 bg-gray-100 rounded-md shadow-sm">
+                        <span className="text-lg font-medium text-gray-800">{assignment.title}</span>
+                        <span className="text-sm text-gray-600">Due: {assignment.dueDate}</span>
                     </li>
                 ))}
             </ul>

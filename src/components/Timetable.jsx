@@ -11,15 +11,18 @@ const Timetable = () => {
     ];
 
     return (
-        <div>
-            <h2>Daily Timetable</h2>
-            <ul>
-                {schedule.map((item, index) => (
-                    <li key={index}>
-                        <strong>{item.time}</strong>: {item.event}
-                    </li>
-                ))}
-            </ul>
+        <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+            <div className="p-4">
+                <h2 className="text-2xl font-bold text-gray-800 mb-4">Daily Timetable</h2>
+                <ul className="divide-y divide-gray-200">
+                    {schedule.map((item, index) => (
+                        <li key={index} className="py-2 flex justify-between items-center">
+                            <span className="text-gray-600 font-medium">{item.time}</span>
+                            <span className="text-gray-800">{item.event}</span>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 };
